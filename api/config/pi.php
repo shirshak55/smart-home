@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'url' => 'http://pi.test',
+    'url' => 'http://192.168.205.35',
 ];
