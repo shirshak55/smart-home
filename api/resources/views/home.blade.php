@@ -34,19 +34,7 @@
             <layout-header></layout-header>
             <section class="portfolio" id="portfolio">
                 <div class="container">
-                    <h2 class="text-center text-uppercase text-secondary mb-0">Control Panel</h2>
-                    <hr class="star-dark mb-5">
-                    <form class="form-horizontal">
-                        @foreach($smart_powers as $smart_power)
-                            <div class="form-group">
-                                <div class="form-check checkbox-slider--b">
-                                    <label>
-                                        <input type="checkbox" {{($smart_power->pin_status == true) ? 'checked':''}} id='bulb_input'><span>{{ $smart_power->name }}</span>
-                                    </label>
-                                </div>
-                            </div>
-                        @endforeach
-                    </form>
+                    <layout-></layout->
                 </div>
             </section>
 

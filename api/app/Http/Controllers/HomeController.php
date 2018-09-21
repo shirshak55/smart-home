@@ -23,7 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $smart_powers = Smartpower::all();
+
         return view('home',compact('smart_powers'));
     }
 }

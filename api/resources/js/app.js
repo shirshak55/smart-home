@@ -17,6 +17,7 @@ window.Vue = require('vue');
 const app = new Vue({
     el: '#app',
     'components': {
+        'layout-power': require('./components/layout_about'),
         'layout-about': require('./components/layout_about'),
         'layout-copyright': require('./components/layout_copyright'),
         'layout-header': require('./components/layout_header'),
