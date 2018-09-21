@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/api/app" isTestSource="false" packagePrefix="App\" />
       <sourceFolder url="file://$MODULE_DIR$/api/tests" isTestSource="true" packagePrefix="Tests\" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/beyondcode/laravel-dump-server" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/cakephp/chronos" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/dnoegel/php-xdg-base-dir" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/doctrine/inflector" />
@@ -20,10 +21,12 @@
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/jakub-onderka/php-console-color" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/jakub-onderka/php-console-highlighter" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/laravel/framework" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/laravel/nova" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/laravel/tinker" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/league/flysystem" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/mockery/mockery" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/moontoast/math" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/myclabs/deep-copy" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/nesbot/carbon" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/nikic/php-parser" />
@@ -57,6 +60,7 @@
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/sebastian/recursion-context" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/sebastian/resource-operations" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/spatie/once" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/swiftmailer/swiftmailer" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/console" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/css-selector" />
