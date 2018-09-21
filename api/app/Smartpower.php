@@ -13,15 +13,18 @@ class Smartpower extends Model
 
     protected $guarded = [];
 
-    public function setPin(Client $client)
+    public function setPin()
     {
-        $req = $client->request('GET', config('pi.url').'/status/'.$this->pin_number.'/set/'.$this->pin_status, []);
-        dd($req->getStatusCode());
+        $client = new Client();
+        $pin_status = (int) $this->pin_status;
+        $req = $client->request('GET', config('pi.url').'/status/'.$this->pin_number.'/set/'.$pin_status, []);
+        return json_decode($req->getBody());
     }
 
-    public function getStatus(Client $client)
+    public function getStatus()
     {
+        $client = new Client();
         $req = $client->request('GET',config('pi.url').'/status/'.$this->pin_number);
-        dd($req->getBody());
+        return json_decode($req->getBody());
     }
 }

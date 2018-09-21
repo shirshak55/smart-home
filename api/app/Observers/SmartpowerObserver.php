@@ -14,7 +14,7 @@ class SmartpowerObserver
      */
     public function created(Smartpower $smartpower)
     {
-       // $smartpower->setPin();
+        $smartpower->setPin();
     }
 
     /**
