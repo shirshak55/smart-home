@@ -17,6 +17,10 @@ window.Vue = require('vue');
 const app = new Vue({
     el: '#app',
     'components': {
-        'footer': require('./components/Footer')
+        'layout-about': require('./components/layout_about'),
+        'layout-copyright': require('./components/layout_copyright'),
+        'layout-header': require('./components/layout_header'),
+        'scroll-to-top': require('./components/scroll_to_top'),
+        'layout-footer': require('./components/layout_footer')
     }
 });

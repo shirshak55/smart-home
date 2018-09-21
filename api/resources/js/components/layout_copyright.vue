@@ -8,7 +8,7 @@
 
 <script>
     export default {
-        name: "Copyright"
+        name: "Layout-Copyright"
     }
 </script>
 

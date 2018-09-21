@@ -15,7 +15,7 @@
 
 <script>
     export default {
-        name: "About"
+        name: "Layout-About"
     }
 </script>
 

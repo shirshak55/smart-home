@@ -27,16 +27,16 @@
         }
     </style>
 
-    <script src="{{mix('/js/app.js')}}"></script>
+
 </head>
     <body id="page-top">
         <div id="app">
+            <layout-header></layout-header>
             <section class="portfolio" id="portfolio">
                 <div class="container">
                     <h2 class="text-center text-uppercase text-secondary mb-0">Control Panel</h2>
                     <hr class="star-dark mb-5">
                     <form class="form-horizontal">
-
                         @foreach($smart_powers as $smart_power)
                             <div class="form-group">
                                 <div class="form-check checkbox-slider--b">
@@ -49,6 +49,12 @@
                     </form>
                 </div>
             </section>
+
+            <layout-footer></layout-footer>
+            <layout-copyright></layout-copyright>
+            <scroll-to-top></scroll-to-top>
         </div>
     </body>
+
+    <script src="{{ mix('/js/app.js') }}"></script>
 </html>

@@ -48,10 +48,6 @@
 
 <script>
     export default {
-        name: "Footer"
+        name: "Layout-Footer"
     }
 </script>
-
-<style scoped>
-
-</style>
