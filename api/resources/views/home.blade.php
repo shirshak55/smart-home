@@ -116,9 +116,8 @@
                 </ul>
             </div>
             <div class="col-md-4">
-                <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                <p class="lead mb-0">Freelance is a free to use, open source Bootstrap theme created by
-                    <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                <h4 class="text-uppercase mb-4">About Us</h4>
+                <p class="lead mb-0">Creating Smart Home since 2010.</p>
             </div>
         </div>
     </div>
@@ -136,20 +135,6 @@
     </a>
 </div>
 
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-<script src="js/jqBootstrapValidation.js"></script>
-<script src="js/contact_me.js"></script>
-
-<script src="js/freelancer.min.js"></script>
-
-<script>
-
-</script>
 
 </body>
 

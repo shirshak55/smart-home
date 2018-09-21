@@ -15,6 +15,7 @@
         "64robots/nova-json": "^1.0",
         "fideloper/proxy": "^4.0",
         "fourstacks/nova-repeatable-fields": "^0.1.0",
+        "guzzlehttp/guzzle": "^6.3",
         "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0"
     },
