@@ -4,8 +4,93 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bb8d9d627d146d439575396943c3dee2",
+    "content-hash": "130d8f25b34faf9a92797dc3ea4cd04c",
     "packages": [
+        {
+            "name": "64robots/nova-fields",
+            "version": "0.1.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/64robots/nova-fields.git",
+                "reference": "d75e42958a61cde045ec2b79cac537719920a99e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/64robots/nova-fields/zipball/d75e42958a61cde045ec2b79cac537719920a99e",
+                "reference": "d75e42958a61cde045ec2b79cac537719920a99e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "R64\\NovaFields\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "R64\\NovaFields\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova field.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "time": "2018-09-18T08:49:56+00:00"
+        },
+        {
+            "name": "64robots/nova-json",
+            "version": "1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/64robots/nova-json.git",
+                "reference": "9f6a8511618e7d7d31a811b69308ffd8a687471d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/64robots/nova-json/zipball/9f6a8511618e7d7d31a811b69308ffd8a687471d",
+                "reference": "9f6a8511618e7d7d31a811b69308ffd8a687471d",
+                "shasum": ""
+            },
+            "require": {
+                "64robots/nova-fields": "^0.1.11",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "R64\\NovaJson\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "R64\\NovaJson\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "JSON Laravel Nova field.",
+            "keywords": [
+                "field",
+                "json",
+                "laravel",
+                "nova"
+            ],
+            "time": "2018-09-17T18:24:11+00:00"
+        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
