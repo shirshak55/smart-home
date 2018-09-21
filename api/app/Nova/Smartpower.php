@@ -2,6 +2,7 @@
 
 namespace App\Nova;
 
+use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\DateTime;
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
@@ -48,7 +49,7 @@ class Smartpower extends Resource
         return [
             ID::make()->sortable(),
             Text::make('Name'),
-            Number::make('Pin Status'),
+            Boolean::make('Pin Status'),
             Repeater::make('Conditions')->addField([
                 'label'=> 'Power On At',
                 'name'=>'power_on',
