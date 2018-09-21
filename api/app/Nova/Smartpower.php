@@ -49,6 +49,7 @@ class Smartpower extends Resource
         return [
             ID::make()->sortable(),
             Text::make('Name'),
+            Number::make('Pin Number'),
             Boolean::make('Pin Status'),
             Repeater::make('Conditions')->addField([
                 'label'=> 'Power On At',
