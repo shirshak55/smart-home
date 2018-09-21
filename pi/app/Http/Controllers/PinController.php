@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Laravel\Lumen\Http\Request;
-
 class PinController extends Controller
 {
     /**
@@ -21,7 +19,7 @@ class PinController extends Controller
         return 'all pin info';
     }
 
-    public function getStatus(Request $request, $pin_no)
+    public function getStatus($pin_no)
     {
         $status = exec('gpio -g read '.$pin_no);
         return response()->json(['status'=> $status,'pin_no'=>$pin_no],201);
