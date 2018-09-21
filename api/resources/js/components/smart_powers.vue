@@ -17,13 +17,7 @@
 
 <script>
     export default {
-        name: "Smart-Powers",
-        data: function()
-        {
-            return {
-                'smart_powers': [],
-            }
-        },
+        name: "SmartPowers",
         mounted: async function()
         {
             let {data} = await axios.get('/smart_powers');

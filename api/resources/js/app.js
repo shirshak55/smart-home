@@ -17,11 +17,13 @@ window.Vue = require('vue');
 const app = new Vue({
     el: '#app',
     'components': {
-        'layout-power': require('./components/layout_about'),
-        'layout-about': require('./components/layout_about'),
-        'layout-copyright': require('./components/layout_copyright'),
-        'layout-header': require('./components/layout_header'),
-        'scroll-to-top': require('./components/scroll_to_top'),
-        'layout-footer': require('./components/layout_footer')
+        'SmartPowers': require('./components/layout_about'),
+        'LayoutAbout': require('./components/layout_about'),
+        'LayoutCopyright': require('./components/layout_copyright'),
+        'LayoutHeader': require('./components/layout_header'),
+        'ScrollToTop': require('./components/scroll_to_top'),
+        'LayoutFooter': require('./components/layout_footer')
     }
 });
+
+window.application = app;

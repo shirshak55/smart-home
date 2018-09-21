@@ -34,10 +34,10 @@
             <layout-header></layout-header>
             <section class="portfolio" id="portfolio">
                 <div class="container">
-                    <layout-></layout->
+                    <smart-powers></smart-powers>
                 </div>
             </section>
-
+            <layout-about></layout-about>
             <layout-footer></layout-footer>
             <layout-copyright></layout-copyright>
             <scroll-to-top></scroll-to-top>
