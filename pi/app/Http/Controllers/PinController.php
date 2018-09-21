@@ -27,12 +27,12 @@ class PinController extends Controller
 
     public function setStatus($pin_no,$value)
     {
-        system("gpio -g mode 18 out");
+        system("gpio -g mode ". $pin_no." out");
 
         if($value){
-            system("gpio -g write 18 1");
+            system("gpio -g write ". $pin_no. " 1");
         }else{
-            system("gpio -g write 18 0");
+            system("gpio -g write ". $pin_no. " 0");
         }
 
         return response()->json(['pin'=>$pin_no,'status'=> $value],201);
