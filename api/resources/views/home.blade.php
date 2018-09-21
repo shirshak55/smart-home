@@ -23,7 +23,7 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="css/freelancer.css" rel="stylesheet">
 
     <style type="text/css">
         input:focus, textarea:focus, select:focus{
@@ -35,18 +35,6 @@
 </head>
 
 <body id="page-top">
-
-<nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
-    <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Home Automation</a>
-        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
-            <i class="fa fa-bars"></i>
-        </button>
-
-    </div>
-</nav>
-
 <!-- Header -->
 <header class="masthead bg-info text-white text-center">
     <div class="container">
@@ -62,29 +50,16 @@
         <h2 class="text-center text-uppercase text-secondary mb-0">Control Panel</h2>
         <hr class="star-dark mb-5">
         <form class="form-horizontal">
-            <div class="form-group">
-                <div class="form-check checkbox-slider--b">
-                    <label>
-                        <input type="checkbox" id='bulb_input'><span>Bulb</span>
-                    </label>
-                </div>
-            </div>
 
-            <div class="form-group">
-                <div class="form-check checkbox-slider--b">
-                    <label>
-                        <input type="checkbox" id='tv_input'><span>TV</span>
-                    </label>
+            @foreach($smart_powers as $smart_power)
+                <div class="form-group">
+                    <div class="form-check checkbox-slider--b">
+                        <label>
+                            <input type="checkbox" {{($smart_power->pin_status == true) ? 'checked':''}} id='bulb_input'><span>{{ $smart_power->name }}</span>
+                        </label>
+                    </div>
                 </div>
-            </div>
-
-            <div class="form-group">
-                <div class="form-check checkbox-slider--b">
-                    <label>
-                        <input type="checkbox" id='freeze_input'><span>Freeze</span>
-                    </label>
-                </div>
-            </div>
+            @endforeach
         </form>
     </div>
 </section>
