@@ -8,6 +8,9 @@ use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
+use Fourstacks\NovaRepeatableFields\Repeater;
+use App\Smartpower as SmartpowerModel;
+
 
 class Smartpower extends Resource
 {
@@ -16,7 +19,7 @@ class Smartpower extends Resource
      *
      * @var string
      */
-    public static $model = 'App\Smartpower';
+    public static $model = SmartpowerModel::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -46,8 +49,19 @@ class Smartpower extends Resource
             ID::make()->sortable(),
             Text::make('Name'),
             Number::make('Pin Status'),
-            JSON::make('Conditions'),
-            DateTime::make('Created At')->exceptOnForms(),
+            Repeater::make('Conditions')->addField([
+                'label'=> 'Power On At',
+                'name'=>'power_on',
+                'type'=>'text',
+            ])->addField([
+                'label'=>'Power Off At',
+                'name'=>'power_off',
+                'type'=>'text',
+            ])->addField([
+                'label'=>'Active',
+                'name'=>'active',
+                'type'=>'text'
+            ])->summaryLabel('Conditions')->addButtonText('Add Conditions')->displayStackedForm(),
             DateTime::make('Updated At')->exceptOnForms(),
         ];
     }
