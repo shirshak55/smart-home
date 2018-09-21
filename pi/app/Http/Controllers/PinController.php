@@ -21,6 +21,7 @@ class PinController extends Controller
 
     public function getStatus($pin_no)
     {
+        system("gpio -g mode ". $pin_no." out");
         $status = exec('gpio -g read '.$pin_no);
         return response()->json(['status'=> $status,'pin_no'=>$pin_no],201);
     }
