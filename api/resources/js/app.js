@@ -18,6 +18,7 @@ const app = new Vue({
     el: '#app',
     'components': {
         'SmartPowers': require('./components/smart_powers'),
+        'SmartInfo': require('./components/smart_info'),
         'SmartWater': require('./components/smart_water'),
         'LayoutAbout': require('./components/layout_about'),
         'LayoutCopyright': require('./components/layout_copyright'),

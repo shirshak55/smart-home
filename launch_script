@@ -1,0 +1,8 @@
+#!/bin/bash
+
+while true
+do
+api/artisan smart:power
+api/artisan smart:water
+sleep 30
+done

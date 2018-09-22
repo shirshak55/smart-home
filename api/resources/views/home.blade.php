@@ -37,6 +37,12 @@
                     <smart-powers></smart-powers>
                 </div>
             </section>
+            <section class="portfolio" id="portfolio">
+                <div class="container">
+                    <smart-info></smart-info>
+                </div>
+            </section>
+
             <layout-about></layout-about>
             <layout-footer></layout-footer>
             <layout-copyright></layout-copyright>
