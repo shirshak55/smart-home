@@ -2,7 +2,9 @@
 
 while true
 do
-api/artisan smart:power
-api/artisan smart:water
+echo 'Launching smart power'
+php api/artisan smart:power
+echo 'Launching smart water'
+php api/artisan smart:water
 sleep 30
 done
