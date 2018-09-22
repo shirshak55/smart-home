@@ -13,9 +13,8 @@ class CreateSmartWatersTable extends Migration
      */
     public function up()
     {
-        Schema::create('smart_waters', function (Blueprint $table) {
+        Schema::create('smartwaters', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('pin_no');
             $table->json('data');
             $table->timestamps();
         });
@@ -28,6 +27,6 @@ class CreateSmartWatersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('smart_waters');
+        Schema::dropIfExists('smartwaters');
     }
 }

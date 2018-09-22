@@ -41,6 +41,8 @@ class Smartpower extends Command
     {
         $smart_power_tools = \App\Smartpower::all();
 
+        $this->updatePinOnPi($smart_power_tools);
+
         foreach($smart_power_tools as $tool)
         {
             $conditons = $tool->conditions;
@@ -80,4 +82,14 @@ class Smartpower extends Command
             }
         }
     }
+
+    protected function updatePinOnPi($smart_power_tools)
+    {
+        foreach($smart_power_tools as $tool){
+            $tool->setPin();
+            $status = $tool->pin_status == false ? 'Off': 'On';
+            $this->info("Setting smart power  $tool->name  to $status");
+        }
+    }
+
 }

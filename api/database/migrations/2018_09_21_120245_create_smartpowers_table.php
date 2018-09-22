@@ -16,6 +16,8 @@ class CreateSmartpowersTable extends Migration
         Schema::create('smartpowers', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->integer('pin_number');
+            $table->boolean('pin_status');
             $table->json('conditions');
             $table->timestamps();
         });

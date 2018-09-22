@@ -15,7 +15,7 @@ class SmartWater extends Resource
      *
      * @var string
      */
-    public static $model = 'App\SmartWater';
+    public static $model = 'App\Smartwater';
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -47,14 +47,15 @@ class SmartWater extends Resource
     {
         return [
             ID::make()->sortable(),
-            JSON::make('Levels',[
+            JSON::make('Data',[
+                Number::make('Motor Pin Number'),
                 Number::make('Minimum Level'),
                 Number::make('Medium Level'),
                 Number::make('Maximum Level'),
-                Number::make('Minimum Level Pin No'),
-                Number::make('Medium Level Pin No'),
-                Number::make('Maximum Level Pin No'),
-            ])
+                Number::make('Minimum Level Pin Number'),
+                Number::make('Medium Level Pin Number'),
+                Number::make('Maximum Level Pin Number'),
+            ],'data')
         ];
     }
 
