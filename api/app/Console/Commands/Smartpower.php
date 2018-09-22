@@ -54,7 +54,7 @@ class Smartpower extends Command
             foreach($conditons as $conditon){
                 if($conditon['active'] != 'True')
                 {
-                    $this->info('This condition is Inactive');
+                    $this->info('This condition is inactive');
                     continue;
                 }
 

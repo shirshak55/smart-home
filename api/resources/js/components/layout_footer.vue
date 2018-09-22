@@ -39,7 +39,7 @@
                 </div>
                 <div class="col-md-4">
                     <h4 class="text-uppercase mb-4">About Us</h4>
-                    <p class="lead mb-0">Creating Smart Home since 2010.</p>
+                    <p class="lead mb-0">Email. hackathon@gmail.com</p>
                 </div>
             </div>
         </div>
