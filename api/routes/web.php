@@ -22,3 +22,5 @@ Route::get('smart_powers','SmartpowerController@showInfo');
 Route::get('smart_powers/{smart_power}/status','SmartpowerController@getStatus');
 Route::get('smart_powers/{smart_power}/on','SmartpowerController@setStatusOn');
 Route::get('smart_powers/{smart_power}/off','SmartpowerController@setStatusOff');
+
+Route::get('smart_water','SmartwaterController@showInfo');
