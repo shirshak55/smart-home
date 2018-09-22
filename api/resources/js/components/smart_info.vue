@@ -3,19 +3,34 @@
         <h2 class="text-center text-uppercase text-secondary mb-0">Smart Statistics</h2>
         <hr class="star-dark mb-5">
 
-        <div id="weather">
-            <img src="img/sunny.svg"> {{overcast}}
-            <span class="temperature">{{currentTemp}}°</span><br>
-            <span id="temp-values">Min {{minTemp}}° <br> Max {{maxTemp}}°</span>
+        <div class="card col-md-4 offset-md-4">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Sunrise <i class="fa fa-sun-o" style="font-size:30px;color:black;"></i> <span class="badge badge-secondary badge-pill"> {{sunrise}}</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Current Temperature <i class="fa fa-thermometer-2" style="font-size:30px;color:black;"></i> <span class="badge badge-secondary badge-pill">{{currentTemp}}°</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Minimum Temperature <i class="fa fa-thermometer-empty" style="font-size:30px;color:black;"></i> <span class="badge badge-secondary badge-pill">{{minTemp}}°</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Maximum Temperature <i class="fa fa-thermometer-full" style="font-size:30px;color:black;"></i> <span class="badge badge-secondary badge-pill">{{maxTemp}}°</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Sunset <i class="fa fa-sun-o" style="font-size:30px;color:black;"></i> <span class="badge badge-secondary badge-pill">{{sunset}}</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Humidity <span class="badge badge-secondary badge-pill">{{humidity}}</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Pressure <span class="badge badge-secondary badge-pill">{{pressure}}</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Wind <span class="badge badge-secondary badge-pill">{{wind}}</span>
+                </li>
+            </ul>
         </div>
-        <div id="info">
-            <img class="icon" :src=icon> {{sunrise}}
-            <img class="icon" src="img/sunset.svg"> {{sunset}}
-            <img class="icon" src="img/humidity.svg"> {{humidity}}
-            <img class="icon" src="img/pressure.svg"> {{pressure}}
-            <img class="icon" src="img/wind.svg"> {{wind}}
-        </div>
-
     </div>
 </template>
 
@@ -45,7 +60,7 @@
         methods: {
             fetchData: function()
             {
-                let url = "https://api.openweathermap.org/data/2.5/weather?APPID=1d4238c34008e95e860c41b9d6da08e7&q=London,uk&units=metric";
+                let url = "/smart_info";
                 axios
                     .get(url)
                     .then(response => {

@@ -48,6 +48,7 @@ class Smartpower extends Command
             $conditons = $tool->conditions;
 
             if(!is_array($conditons)){
+                $this->info('condition not array');
                 continue;
             }
 
@@ -67,16 +68,14 @@ class Smartpower extends Command
                 {
                     if ($power_on_time == $current_date_time) {
                         $this->info('Powering on the pin '. $tool->pin_number);
-                        $tool->setPin();
+                        $tool->setPinHigh();
                     }
                 }
-
                 if($power_off_time = $conditon['power_off'])
                 {
-
-                    if ($power_on_time == $current_date_time) {
+                    if ($power_off_time == $current_date_time) {
                         $this->info('Powering off the pin '. $tool->pin_number);
-                        $tool->setPin();
+                        $tool->setPinLow();
                     }
                 }
             }

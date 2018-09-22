@@ -22,6 +22,20 @@ class Smartpower extends Model
         return json_decode($req->getBody());
     }
 
+    public function setPinHigh()
+    {
+        $client = new Client();
+        $req = $client->request('GET', config('pi.url').'/status/'.$this->pin_number.'/set/1', []);
+        return json_decode($req->getBody());
+    }
+
+    public function setPinLow()
+    {
+        $client = new Client();
+        $req = $client->request('GET', config('pi.url').'/status/'.$this->pin_number.'/set/0', []);
+        return json_decode($req->getBody());
+    }
+
     public function getStatus()
     {
         $client = new Client();

@@ -2,7 +2,7 @@
     <div>
         <h2 class="text-center text-uppercase text-secondary mb-0">Smart Power</h2>
         <hr class="star-dark mb-5">
-        <form class="form-horizontal">
+        <form class="form-horizontal col-md-4 offset-4">
 
             <div class="form-group" v-for="(smart_power,index) in smart_powers">
                 <div class="form-check checkbox-slider--b" v-if="smart_power">

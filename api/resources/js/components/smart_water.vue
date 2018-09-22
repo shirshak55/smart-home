@@ -2,7 +2,9 @@
     <div>
         <h2 class="text-center text-uppercase text-secondary mb-0">Smart Water</h2>
         <hr class="star-dark mb-5">
-        <p>The water level is around <span :style="{color: color}">{{ status }}%</span></p>
+        <p v-if="status">The water level is around <span :style="{color: color}">{{ status }}%</span></p>
+        <p v-else>The sensor is not readable</p>
+
         <div class="progress" v-if="display_status != null">
             <div class="progress-bar" role="progressbar" :style="{width : display_status+'%'}" :aria-valuenow="status" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
@@ -14,7 +16,7 @@
         name: "SmartWater",
         data() {
             return {
-                status : [],
+                status : null,
                 color: '',
                 display_status: null,
             }
