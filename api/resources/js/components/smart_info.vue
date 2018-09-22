@@ -49,7 +49,6 @@
                 axios
                     .get(url)
                     .then(response => {
-                        console.log(response)
                         this.currentTemp = response.data.main.temp;
                         this.minTemp = response.data.main.temp_min;
                         this.maxTemp = response.data.main.temp_max;
