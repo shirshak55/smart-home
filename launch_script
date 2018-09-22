@@ -6,5 +6,5 @@ echo 'Launching smart power'
 php api/artisan smart:power
 echo 'Launching smart water'
 php api/artisan smart:water
-sleep 30
+sleep 5
 done

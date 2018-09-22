@@ -43,6 +43,13 @@
                 </div>
             </section>
 
+            <section class="portfolio" id="portfolio">
+                <div class="container">
+                    <smart-water></smart-water>
+                </div>
+            </section>
+
+
             <layout-about></layout-about>
             <layout-footer></layout-footer>
             <layout-copyright></layout-copyright>
@@ -50,5 +57,7 @@
         </div>
     </body>
 
-    <script src="{{mix('/js/app.js')}}"></script>
+<script src="/js/manifest.js"></script>
+<script src="/js/vendor.js"></script>
+<script src="/js/app.js"></script>
 </html>
