@@ -18,7 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('smart_power','SmartpowerController@info');
-Route::get('smart_power/{smart_power}/status','SmartpowerController@getStatus');
-Route::get('smart_power/{smart_power}/on','SmartpowerController@setStatusOn');
-Route::get('smart_power/{smart_power}/off','SmartpowerController@setStatusOff');
+Route::get('smart_powers','SmartpowerController@showInfo');
+Route::get('smart_powers/{smart_power}/status','SmartpowerController@getStatus');
+Route::get('smart_powers/{smart_power}/on','SmartpowerController@setStatusOn');
+Route::get('smart_powers/{smart_power}/off','SmartpowerController@setStatusOff');

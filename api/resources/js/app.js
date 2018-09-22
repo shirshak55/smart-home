@@ -17,7 +17,7 @@ window.Vue = require('vue');
 const app = new Vue({
     el: '#app',
     'components': {
-        'SmartPowers': require('./components/layout_about'),
+        'SmartPowers': require('./components/smart_powers'),
         'LayoutAbout': require('./components/layout_about'),
         'LayoutCopyright': require('./components/layout_copyright'),
         'LayoutHeader': require('./components/layout_header'),
@@ -25,5 +25,3 @@ const app = new Vue({
         'LayoutFooter': require('./components/layout_footer')
     }
 });
-
-window.application = app;

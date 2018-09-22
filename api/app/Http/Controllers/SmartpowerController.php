@@ -26,13 +26,16 @@ class SmartpowerController extends Controller
         return $smartpower->getStatus();
     }
 
-    public function setStatusOn(Smartpower $smartpower)
+    public function setStatusOn(Smartpower $smart_power)
     {
-        return $smartpower->forceFill(['pin_status','1'])->update();
+        $smart_power->forceFill(['pin_status'=>'1'])->save();
+
+        return response()->json(null,201);
     }
 
-    public function setStatusOff(Smartpower $smartpower)
+    public function setStatusOff(Smartpower $smart_power)
     {
-        return $smartpower->forceFill(['pin_status','0'])->update();
+        $smart_power->forceFill(['pin_status'=>'0'])->save();
+        return response()->json(null,201);
     }
 }

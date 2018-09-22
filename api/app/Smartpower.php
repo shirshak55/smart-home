@@ -8,7 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Smartpower extends Model
 {
     protected $casts = [
-        'conditions' => 'array'
+        'conditions' => 'array',
+        'pin_status' => 'boolean',
     ];
 
     protected $guarded = [];

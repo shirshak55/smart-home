@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSmartpowersTable extends Migration
+class CreateSmartWatersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateSmartpowersTable extends Migration
      */
     public function up()
     {
-        Schema::create('smartpowers', function (Blueprint $table) {
+        Schema::create('smart_waters', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->json('conditions');
+            $table->integer('pin_no');
+            $table->json('data');
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ class CreateSmartpowersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('smartpowers');
+        Schema::dropIfExists('smart_waters');
     }
 }
