@@ -26,9 +26,11 @@ We got many plan so are you ready to help us
 
 # Images
 
-![Raspberry Pi][https://github.com/shirshak55/smart-home/images/pi_setup.png]
-![Smart Power Home][https://github.com/shirshak55/smart-home/images/smart_power.png]
-![Smart Weather][https://github.com/shirshak55/smart-home/images/smart_weather.png]
+![Raspberry Pi][https://raw.githubusercontent.com/shirshak55/smart-home/master/images/pi_setup.png]
+
+![Smart Power Home][https://raw.githubusercontent.com/shirshak55/smart-home/master/images/smart_power.png]
+
+![Smart Weather][https://raw.githubusercontent.com/shirshak55/smart-home/master/images/smart_weather.png]
 
 # Architecture
 - Uses Laravel for server
