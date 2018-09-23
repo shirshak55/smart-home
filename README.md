@@ -18,6 +18,8 @@ Smart Water
 - Notifications on mobile, email etc.
 - Testing
 - By using weather api we can turn off fan if the temperature is low 
+- Android App
+- Desktop App
 
 We got many plan so are you ready to help us 
 
